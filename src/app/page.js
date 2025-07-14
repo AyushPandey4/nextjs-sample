@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -24,6 +25,30 @@ export default function Home() {
             Save and see your changes instantly.
           </li>
         </ol>
+
+        {/* Add navigation buttons */}
+        <div className="flex flex-col gap-3 items-center w-full max-w-xs mt-4">
+          <Link href="/about" className="w-full">
+            <button className="w-full py-2 px-4 rounded bg-blue-600 text-white hover:bg-blue-700 transition">
+              Go to About
+            </button>
+          </Link>
+          <Link href="/contact" className="w-full">
+            <button className="w-full py-2 px-4 rounded bg-green-600 text-white hover:bg-green-700 transition">
+              Go to Contact
+            </button>
+          </Link>
+          <Link href="/services" className="w-full">
+            <button className="w-full py-2 px-4 rounded bg-purple-600 text-white hover:bg-purple-700 transition">
+              Go to Services
+            </button>
+          </Link>
+          <Link href="/blog/test-slug" className="w-full">
+            <button className="w-full py-2 px-4 rounded bg-pink-600 text-white hover:bg-pink-700 transition">
+              Go to Blog: test-slug
+            </button>
+          </Link>
+        </div>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
