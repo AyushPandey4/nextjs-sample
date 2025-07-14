@@ -43,11 +43,6 @@ export default function Home() {
               Go to Services
             </button>
           </Link>
-          <Link href="/blog/test-slug" className="w-full">
-            <button className="w-full py-2 px-4 rounded bg-pink-600 text-white hover:bg-pink-700 transition">
-              Go to Blog: test-slug
-            </button>
-          </Link>
         </div>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
